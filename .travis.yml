@@ -2,8 +2,14 @@ language: java
 before_script: 
     - sudo wget -q http://dl.google.com/android/android-sdk_r18-linux.tgz 
     - sudo tar xzvf android-sdk_r18-linux.tgz > /dev/null
+	- sudo export ANDROID_HOME=`pwd`/android-sdk-linux
+	- sudo export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/build-tools/18.0.1
     - sudo android-sdk-linux/tools/android -s update sdk --filter android-7,platform-tool --no-ui
     - sudo android-sdk-linux/tools/android -s update project --path ./FridgeMagnet
     - sudo android-sdk-linux/tools/android -s update test-project --path ./FridgeMagnetTest -m ../FridgeMagnet
+	- pwd
+	- ls -la
+	- ls -la  android-sdk-linux
+	- ls -la  android-sdk-linux/platform-tools
     - sudo chmod -R 777 ./*
 script: "./buildstuff.sh"
