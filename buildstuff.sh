@@ -11,7 +11,7 @@ cd ..
 
 # cd ./FridgeMagnetTest
 # ant clean
-# ant test
+# ant testd da
 # if [ "$?" = 1 ]; then
 	# echo "FridgeMagnetTest build failed!"
     # FAILED=1
