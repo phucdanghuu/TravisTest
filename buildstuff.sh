@@ -2,6 +2,8 @@
 FAILED=0
 cd ./FridgeMagnet
 ant clean
+ant debug
+ant install
 if [ "$?" = 1 ]; then
     echo "FridgeMagnet build failed!"
     FAILED=1
