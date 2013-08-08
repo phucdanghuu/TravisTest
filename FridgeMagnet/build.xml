@@ -4,7 +4,7 @@
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
          Version Control Systems. -->
-    <property file="local.properties" />
+    <!-- <property file="local.properties" /> -->
 	<echo message="${sdk.dir}/tools/ant/build.xml"/>
     <!-- The ant.properties file can be created by you. It is only edited by the
          'android' tool to add properties to it.
@@ -87,6 +87,6 @@
          in order to avoid having your file be overridden by tools such as "android update project"
     -->
     <!-- version-tag: 1 -->
-    <import file="$/home/travis/build/phucdanghuu/TravisTest/tools/ant/build.xml" />
+    <import file="${sdk.dir}/tools/ant/build.xml" />
 
 </project>
