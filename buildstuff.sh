@@ -9,7 +9,7 @@ FAILED=0
 # cd ..
 
 cd ./FridgeMagnetTest
-ant clean test
+ant clean debug install test
 if [ "$?" = 1 ]; then
 	echo "FridgeMagnetTest build failed!"
     FAILED=1
