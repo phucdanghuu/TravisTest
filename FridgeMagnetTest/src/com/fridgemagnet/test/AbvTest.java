@@ -1,0 +1,24 @@
+package com.fridgemagnet.test;
+
+
+import android.test.AndroidTestCase;
+
+public class AbvTest extends AndroidTestCase {
+	@Override
+	protected void setUp() throws Exception {
+		super.setUp();
+	}
+
+	/**
+	 * Test adding a daisy book into local db (with type is 'download').
+	 */
+	public void testABC() {
+		boolean isOK = false;
+		assertTrue(isOK);
+	}
+
+	@Override
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+}
