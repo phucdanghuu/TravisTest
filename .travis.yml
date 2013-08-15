@@ -16,7 +16,7 @@ before_install:
   - android update sdk --filter android-17,sysimg-17,tools,platform-tools,extra-android-support --no-ui --force
   - echo y | android update sdk --filter build-tools-18.0.1 --no-ui --force  
   # Create and start emulator
-  - echo no | android create avd --force -n test -t android-17 
+  - echo no | android create avd --force -n test -t android-17  --abi armeabi-v7a
   - emulator -avd test
 before_script:
   - pwd
@@ -30,5 +30,6 @@ before_script:
   # Just see if aapt can be run now it's been installed
   - file ./android-sdk-linux/build-tools/18.0.1/aapt
   - chmod 777 ./buildstuff.sh
+  - chmod +x wait_for_emulator
   - ./wait_for_emulator
 script: "./buildstuff.sh"
