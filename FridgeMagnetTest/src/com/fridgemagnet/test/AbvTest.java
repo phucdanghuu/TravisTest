@@ -12,7 +12,11 @@ public class AbvTest extends AndroidTestCase {
 	/**
 	 * Test adding a daisy book into local db (with type is 'download').
 	 */
-	public void testABC() {
+	public void testTrue() {
+		boolean isOK = true;
+		assertTrue(isOK);
+	}
+	public void testFalse() {
 		boolean isOK = false;
 		assertTrue(isOK);
 	}
