@@ -17,7 +17,7 @@ public class AbvTest extends AndroidTestCase {
 		assertTrue(isOK);
 	}
 	public void testFalse() {
-		boolean isOK = true;
+		boolean isOK = false;
 		assertTrue(isOK);
 	}
 
