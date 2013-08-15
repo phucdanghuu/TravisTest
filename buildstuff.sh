@@ -9,12 +9,12 @@ if [ "$?" = 1 ]; then
 fi
 cd ..
 
-# cd ./FridgeMagnetTest
-# ant clean
-# ant testd da
-# if [ "$?" = 1 ]; then
-	# echo "FridgeMagnetTest build failed!"
-    # FAILED=1
-# fi
-# cd ..
+cd ./FridgeMagnetTest
+ant clean
+ant test
+if [ "$?" = 1 ]; then
+	echo "FridgeMagnetTest build failed!"
+    FAILED=1
+fi
+cd ..
 exit $FAILED
