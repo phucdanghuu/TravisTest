@@ -1,7 +1,7 @@
 #!/bin/bash
 FAILED=0
 cd ./FridgeMagnet
-ant debug
+ant debug install
 if [ "$?" = 1 ]; then
     echo "FridgeMagnet build failed!"
     FAILED=1
