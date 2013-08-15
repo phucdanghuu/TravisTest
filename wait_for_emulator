@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "hung"
 bootanim=""
 failcounter=0
 until [[ "$bootanim" =~ "stopped" ]]; do
